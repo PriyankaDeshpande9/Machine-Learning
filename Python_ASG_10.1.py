@@ -4,7 +4,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
 
-
 def load_data():
     df = pd.read_csv("MarvellousInfosystems_PlayPredictor.csv")
     print(df.head())
@@ -15,7 +14,6 @@ def load_data():
     df['Temperature'] = df['Temperature'].replace('Hot', 1)
     df['Temperature'] = df['Temperature'].replace('Mild', 2)
     df['Temperature'] = df['Temperature'].replace('Cool', 3)
-
 
     df['Play'] = df['Play'].replace('Yes', 1)
     df['Play'] = df['Play'].replace('No', 0)
